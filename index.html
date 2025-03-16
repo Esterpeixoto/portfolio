@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ester Peixoto - Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="home">
+        <img src="Ester-Peixoto.jpg" alt="Ester Peixoto" srcset="Ester Peixoto">
+        <div class="presentation">
+            <h1 class="persona">Olá, eu sou a Ester Peixoto!</h1>
+            <h2>Escritora, poeta e Jornalista em formação.</h2>
+        </div>
+    </section>
+    <section class="about">
+        <div class="information">
+            <h2>Sobre mim</h2>
+            <p>Mineira do norte de Minas. Graduada em Tecnologia em Gestão de Recursos Humanos. Cursando MBA em Desenvolvimento de pessoas. Estudante de Jornalismo na Universidade Estadual de Londrina. Escritora do livro Criticando, Atrito Arte, 2019. Participação no livro A língua quando poema, Baderna, 2022.</p>
+            <p>Desde pequena sempre fui apaixonada pela arte e comunicação. Ingressei no curso de jornalismo com o sonho de trabalhar em Tv, também me identifico com rádio, captação de imagens e escrita.</p>
+        </div>
+    </section>
+    <section class="port">
+        <div class="portifolio">
+            <h2>Materiais produzidos durante a graduação</h2>
+        </div>
+        <div class="tab-noticias">
+            <div class="tabs">
+                <button class="tab-btn active" content-id="news">
+                    Matérias
+                </button>
+                <button class="tab-btn" content-id="updates">
+                    Fotos
+                </button>
+                <button class="tab-btn" content-id="events">
+                    Videos
+                </button>
+                <button class="tab-btn" content-id="blog">
+                    Rádio
+                </button>
+            </div>
+            <div class="tab-contents">
+                <div class="tab-content show" id="news">
+                    <p>Produção de matérias para a disciplina de Técnicas de Reportagem onde pude desenvolver a minha escrita, apuração de fatos, contato com fontes e criação de pautas.</p>
+                    <div class="materias">
+                        <a href="Secretaria de Estado da Educação do Paraná realiza prova para contratação de professores temporários.pdf" target="_blank">
+                            <div class="materia">
+                                <img src="Secretaria de Estado da Educação do Paraná realiza prova para contratação de professores temporários.jpg" alt="" srcset="">
+                            </div>
+                        </a>
+                        <a href="Justiça Eleitoral do Paraná promove capacitação de mesários PcDs e coordenadores de acessibilidade em Londrina.pdf" target="_blank">
+                            <div class="materia">
+                                <img src="Justiça Eleitoral do Paraná promove capacitação de mesários PcDs e coordenadores de acessibilidade em Londrina.jpg" alt="">
+                            </div>
+                        </a>
+                        <a href="Interrupção no abastecimento de água em Cambé.pdf" target="_blank">
+                            <div class="materia">
+                                <img src="Interrupção no abastecimento de água em Cambé.jpg" alt="">
+                            </div>
+                        </a>
+                        <a href="Especialista em inclusão realiza palestra sobre capacitismo para alunos do curso de jornalismo da Universidade Estadual de Londrina.pdf" target="_blank">
+                            <div class="materia">
+                                <img src="Especialista em inclusão realiza palestra sobre capacitismo para alunos do curso de jornalismo da Universidade Estadual de Londrina-1.jpg" alt="">
+                            </div>
+                        </a>
+                        <a href="Comunicação empresarial.pdf" target="_blank">
+                            <div class="materia">
+                                <img src="Comunicação empresarial.jpg" alt="">
+                            </div>
+                        </a>
+                        <a href="CMEI em Londrina recebe Kaingang para celebrar o dia internacional dos povos indígenas.pdf" target="_blank">
+                            <div class="materia">
+                                <img src="CMEI em Londrina recebe Kaingang para celebrar o dia internacional dos povos indígenas.jpg" alt="">
+                            </div>
+                        </a>
+                        <a href="Chitãozinho e Xororó lota Ginásio Moringão em Londrina.pdf" target="_blank">
+                            <div class="materia">
+                                <img src="Chitãozinho e Xororó lota Ginásio Moringão em Londrina.jpg" alt="">
+                            </div>
+                        </a>
+                        <a href="CASAL DE NAMORADOS SÃO EXECUTADOS NO BAIRRO VILA GENI EM LONDRINA.pdf" target="_blank">
+                            <div class="materia">
+                                <img src="CASAL DE NAMORADOS SÃO EXECUTADOS NO BAIRRO VILA GENI EM LONDRINA.jpg" alt="">
+                            </div>
+                        </a>
+                        <a href="Um sítio arqueológico foi descoberto hoje por volta das 9h00 na Reserva Amaraí.pdf" target="_blank">
+                            <div class="materia">
+                                <img src="Um sítio arqueológico foi descoberto hoje por volta das 9h00 na Reserva Amaraí.jpg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="tab-content" id="updates">
+                    Conteudo Fotos
+                </div>
+                <div class="tab-content" id="events">
+                    Conteudo Videos
+                </div>
+                <div class="tab-content" id="blog">
+                    Conteudo Rádio
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        const tabs = document.querySelectorAll('.tab-btn');
+
+        tabs.forEach(tab => tab.addEventListener('click', () => tabCLicked(tab)));
+
+        const tabCLicked = (tab) => {
+            tabs.forEach(tab => tab.classList.remove('active'));
+            tab.classList.add('active');
+
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.classList.remove('show'));
+
+            const contentID = tab.getAttribute('content-id');
+            const content = document.getElementById(contentID);
+
+            content.classList.add('show');
+        }
+    </script>
+</body>
+</html>
