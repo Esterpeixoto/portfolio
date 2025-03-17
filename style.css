@@ -135,8 +135,14 @@ section.port{
     height: 350px;
 }
 .audio{
+    display: flex;
+    align-items: center;
     flex-direction: column;
+    gap: 10px;
 }
 .audio img{
-    max-width: 150px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover; /* Garante que a imagem fique bem ajustada */
+    border-radius: 10px; /* Bordas arredondadas opcionais */
 }
