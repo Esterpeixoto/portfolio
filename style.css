@@ -111,6 +111,16 @@ section.port{
     /* background-color: white; */
 }
 
+.fotojornalismo{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.fotojornalismo img{
+    max-width: 310px;
+}
+
 .videos{
     display: flex;
     gap: 20px;
@@ -123,4 +133,10 @@ section.port{
     justify-content: center;
     align-items: center;
     height: 350px;
+}
+.audio{
+    flex-direction: column;
+}
+.audio img{
+    max-width: 150px;
 }
