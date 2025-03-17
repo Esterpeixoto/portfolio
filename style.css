@@ -156,3 +156,35 @@ section.port{
     align-items: center;
     height: 350px;
 }
+
+@media (max-width:634px){
+    section.home{
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    section.home h1{
+        font-size: 1.8rem;
+        padding: 10px;
+        margin-top: -20px;
+    }
+    section.home h2{
+        font-size: 1.2rem;
+        padding: 10px;
+        margin-top: -10px;
+    }
+    section.about .information{
+        width: 100%;
+    }
+    section.about .information > h2, p  {
+        padding: 10px;
+    }
+    section.about img{
+        width: 100%;
+
+    }
+    .tab-noticias{
+        max-width: 100%;
+    }
+}
