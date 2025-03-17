@@ -110,3 +110,17 @@ section.port{
     height: 250px;
     /* background-color: white; */
 }
+
+.videos{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+}
