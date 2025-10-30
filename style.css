@@ -117,6 +117,32 @@ section.port{
     height: 250px;
     /* background-color: white; */
 }
+.materias-destaque{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card-imagem-destaque{
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+
+    a{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 18pt;
+        font-weight: 600;
+        text-decoration: none;
+        color: #9b4819;
+
+        &:hover{
+            color: #4d2c19;
+            text-decoration: underline;
+        }
+    }
+}
+
 
 .fotojornalismo{
     display: flex;
@@ -128,10 +154,20 @@ section.port{
     max-width: 310px;
 }
 
+.instagram{
+    display: flex;
+    gap: 0px;
+}
+
 .videos{
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+}
+
+.videos-shorts {
+    display: flex;
+    gap: 20px;
 }
 
 .audio{
