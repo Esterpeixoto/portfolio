@@ -23,7 +23,7 @@ section.home{
 section.about{
     width: 100%;
     /* height: 250px; */
-    background-color: #9b4819;
+    background-color: #0b6f3d;
     color: #f4f1e8;
     display: flex;
     flex-direction: column;
@@ -80,19 +80,19 @@ section.port{
    width: 100%;
    height: 35px;
    border: none;
-   background-color: #9b4819;
+   background-color: #0b6f3d;
    cursor: pointer;
    color: white;
    border-radius: 4px 4px 0 0;
 }
 .tab-btn:hover{
-   background-image: linear-gradient(to bottom, #c0764b, #9b4819);
+   background-image: linear-gradient(to bottom, #3ebe7e, #0b6f3d);
    color: white;
 }
 .tab-btn.active {
    background-color: var(--orange);
    color: black;
-   border: 1px solid #9b4819;
+   border: 1px solid #0b6f3d;
    border-bottom: none;
 }
 .tab-btn.active:hover{
@@ -103,7 +103,7 @@ section.port{
    min-height: 108px;
    border-radius: 0 0 4px 4px;
    padding: 20px;
-   border: 1px solid #9b4819;
+   border: 1px solid #0b6f3d;
 }
 .materias{
     display: flex;
@@ -134,10 +134,10 @@ section.port{
         font-size: 18pt;
         font-weight: 600;
         text-decoration: none;
-        color: #9b4819;
+        color: #0b6f3d;
 
         &:hover{
-            color: #4d2c19;
+            color: #094728;
             text-decoration: underline;
         }
     }
@@ -184,7 +184,7 @@ section.port{
 }
 
 .contato{
-    background-color: #9b4819;
+    background-color: #0b6f3d;
     color: #f4f1e8;
     display: flex;
     flex-direction: column;
